@@ -93,31 +93,35 @@
             <div class="tile is-ancestor">
                 <div class="tile is-4 is-vertical">
                     <div class="tile is-parent">
-                        <artilce class="tile is-child notification is-info">
+                        <article class="tile is-child notification">
                             <p class="title">Similarity</p>
-                            <p class="has-text-centered metrics">32 %</p>
+                            <p class="has-text-centered metrics" id="cosine_value">32 %</p>
                         </article>
                     </div>
                 </div>
                 <div class="tile is-vertical">
                     <div class="tile is-parent">
-                        <artilce class="tile is-child notification has-background-grey-lighter">
+                        <article class="tile is-child notification has-background-grey-lighter">
                             <p class="title">Frequencies</p>
-                            <artilce class="tile is-child notification">
-                                <div class="field is-grouped is-grouped-multiline" id="tags">
+                            <article class="tile is-child notification">
+                                <p class="subtitle">Document 1</p>
+                                <div class="field is-grouped is-grouped-multiline" id="tags1">
                                     <div class="control">
                                         <div class="tags has-addons">
                                             <span class="tag is-dark">word</span>
                                             <span class="tag is-info">32</span>
                                         </div>
                                     </div>
-                                    <div class="control">
+                                </div>
+                                <p class="subtitle">Document 2</p>
+                                <div class="field is-grouped is-grouped-multiline" id="tags2">
+                                        <div class="control">
                                             <div class="tags has-addons">
                                                 <span class="tag is-dark">word</span>
-                                                <span class="tag is-info">32</span>
+                                                <span class="tag is-success">32</span>
                                             </div>
                                         </div>
-                                </div>
+                                    </div>
                             </article>
                         </article>
                     </div>
