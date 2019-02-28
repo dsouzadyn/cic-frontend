@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/all.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </head>
+  <body style="padding-bottom: 100px">
+    <section class="hero has-background-grey-lighter is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1 has-text-centered">
+                    Plagiarism Checker
+                </h1>
+                <div class="columns">
+                    <div class="column"><textarea class="textarea" placeholder="some text..." id="text1"></textarea></div>
+                    <div class="column is-narrow has-text-centered">
+                        <span class="icon has-text-dark is-hidden-mobile" style="margin-top: 48px;">
+                            <i class="fas fa-2x fa-arrows-alt-h"></i>
+                        </span>
+                        <span class="icon has-text-dark is-hidden-desktop">
+                            <i class="fas fa-2x fa-arrows-alt-v"></i>
+                        </span>
+                    </div>
+                    <div class="column"><textarea class="textarea" placeholder="some text..." id="text2"></textarea></div>
+                </div>
+
+                <h5 class="title is-5 has-text-centered">
+                    -OR-
+                </h5>
+
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <div class="file is-centered is-boxed is-success">
+                                        <label class="file-label">
+                                            <input class="file-input" type="file" name="text1" id="doc1">
+                                            <span class="file-cta">
+                                                <span class="file-icon">
+                                                    <i class="fas fa-upload"></i>
+                                                </span>
+                                                <span class="file-label">
+                                                    Select a document...
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <div class="file is-centered is-boxed is-error">
+                                        <label class="file-label">
+                                            <input class="file-input" type="file" name="text2" id="doc2">
+                                            <span class="file-cta">
+                                                <span class="file-icon">
+                                                    <i class="fas fa-upload"></i>
+                                                </span>
+                                                <span class="file-label">
+                                                    Select a document...
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <div class="control has-text-centered">
+                            <button class="button is-link" onclick="uploadAndCheck()">Check</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="metrics">
+        <div class="container" style="margin-top: 6em;">
+            <h1 class="title has-text-centered">Metrics</h1>
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical">
+                    <div class="tile is-parent">
+                        <artilce class="tile is-child notification is-info">
+                            <p class="title">Similarity</p>
+                            <p class="has-text-centered metrics">32 %</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-vertical">
+                    <div class="tile is-parent">
+                        <artilce class="tile is-child notification has-background-grey-lighter">
+                            <p class="title">Frequencies</p>
+                            <artilce class="tile is-child notification">
+                                <div class="field is-grouped is-grouped-multiline" id="tags">
+                                    <div class="control">
+                                        <div class="tags has-addons">
+                                            <span class="tag is-dark">word</span>
+                                            <span class="tag is-info">32</span>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                            <div class="tags has-addons">
+                                                <span class="tag is-dark">word</span>
+                                                <span class="tag is-info">32</span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </article>
+                        </article>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

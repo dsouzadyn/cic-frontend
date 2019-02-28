@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.metrics {
+    padding: 32px 0px 64px;
+    font-size: 72px;
+}
