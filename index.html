@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checker</title>
     <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/jqcloud.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/all.js"></script>
     <script src="js/scrollreveal.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqcloud.min.js"></script>
     <script src="js/axios.min.js"></script>
     <script src="js/main.js"></script>
-    
   </head>
   <body style="padding-bottom: 100px">
     <section class="hero has-background-grey-lighter is-fullheight">
@@ -95,11 +97,19 @@
                     <div class="tile is-parent">
                         <article class="tile is-child notification">
                             <p class="title">Similarity</p>
-                            <p class="has-text-centered metrics" id="cosine_value">32 %</p>
+                            <p class="has-text-centered metrics" id="cosine_value">0 %</p>
                         </article>
                     </div>
                 </div>
                 <div class="tile is-vertical">
+                    <!-- <div class="tile is-parent">
+                        <article class="tile is-child notification has-background-grey-lighter">
+                            
+                            <article class="tile is-child notification">
+                                <div id="word_cloud"></canvas>
+                            </article>
+                        </article>
+                    </div> -->
                     <div class="tile is-parent">
                         <article class="tile is-child notification has-background-grey-lighter">
                             <p class="title">Frequencies</p>
